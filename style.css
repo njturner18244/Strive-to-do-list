@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, pink, rgb(184, 57, 57));
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border:wheat;
+    background: rgb(214, 206, 206);
+}
+
+form button {
+    color:rgb(184, 57, 57);
+    background: white;
+    cursor: pointer;
+    
+}
+form button:hover {
+    background: wheat;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: O.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: rgb(240, 186, 166);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background:rgb(232, 245, 145);
+}
+
+.todo-item {
+    padding: 1.5rem 0.5rem;
+}
+
+.fa-trash, fa-check {
+    pointer-events: none;
+}
